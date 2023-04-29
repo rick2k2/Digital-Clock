@@ -61,7 +61,7 @@ function getAllInfo() {
     const newHour = newDate.getHours();
     const newSec = newDate.getSeconds();
 
-    setSecond.innerHTML = newSec < 10 ? `0${newSec}` : newSec;
+    setSecond.innerHTML = newSec < 10 ? `0${newSec}s` : `${newSec}s`;
 
     if (newMinute !== minute) {
       minute = newMinute;
